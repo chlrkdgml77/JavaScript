@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>오목 게임</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header id="main-header">
+      <h1>오목 게임에 오신것을 환영합니다!</h1>
+      <p>HTML, CSS, JavaScript를 이용하여 만들어졌습니다.</p>
+    </header>
+
+    <main>
+      <aside>
+        <h2>이름을 입력해주세요</h2>
+        <form>
+          <div>
+            <label for="username">Player name</label>
+            <input type="text" name="user-name" id="username" />
+          </div>
+          <div>
+            <button type="button" class="btn btn-alt">Cancel</button>
+            <button type="submit" class="btn">Confirm</button>
+          </div>
+        </form>
+      </aside>
+      <section id="game-configuration">
+        <ol>
+          <li>
+            <article>
+              <h2>Player 1</h2>
+              <h3>PLAYER NAME</h3>
+              <p>X</p>
+              <button class="btn btn-alt">Edit</button>
+            </article>
+          </li>
+          <li>
+            <article>
+              <h2>Player 2</h2>
+              <h3>PLAYER NAME</h3>
+              <p>O</p>
+              <button class="btn btn-alt">Edit</button>
+            </article>
+          </li>
+        </ol>
+        <button class="btn">Start New Game</button>
+      </section>
+
+      <section id="active-game">
+        <article>You won, <span id="winner-name">PLAYER NAME</span></article>
+        <p>새 게임 시작</p>
+
+        <p>It's your turn <span id="active-player-name">PLAYER NAME</span></p>
+        <ol>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ol>
+      </section>
+    </main>
+  </body>
+</html>
