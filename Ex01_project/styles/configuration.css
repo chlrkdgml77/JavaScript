@@ -23,6 +23,15 @@
   padding: 0.35rem;
 }
 
+.error label {
+  color: red;
+}
+.error input {
+  border-color: red;
+  color: red;
+  background-color: rgb(235, 194, 194);
+}
+
 #game-configuration {
   width: 90%;
   max-width: 40rem;
